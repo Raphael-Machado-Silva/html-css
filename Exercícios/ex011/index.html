@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1> <hr>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua ou aumente o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+<img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+<p>Para introduzir uma imagem dinãmica é necessário que se abra a tag PICTURE e dentro da mesma abra o código SOURCE MEDIA TYPE, mas antes inserir a imagem desejada dentro dessa tag PICTURE por meio da tag IMG, logo essa tag source entra como uma adaptação ao tamanho da tela e a imagem escolhida, com isso você deverá selecionar uma imagem de tamanho maior ou menor como substituta no espaço "srcset." </p>
+<p>Lembrando a base é a foto que eu quero colocar inicialmente, seja a maior ou a menor, e acima você vai colocar os sources em ordem racional, seja a mesma, crescente ou decrescente.</p>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios, para isso é necessário inserir a tag AUDIO e dentro do mesmo a tag CONTROLS AUTOPLAY.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="mídia/music.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="mídia/music.mp3">Clique aqui para baixar o arquivo mp3. </a>
+    </audio> 
+<!--MP3, WAV, OGG-->
+
+</body>
+</html> 

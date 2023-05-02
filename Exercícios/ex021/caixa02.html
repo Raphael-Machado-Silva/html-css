@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    
+    <style>      /*USAR ESSE EXERCICIO COMO BASE PARA OUTROS */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom,#047892,#038d9c, #4fbbbb, white, #4fbbbb, #038d9c, #047892);
+            background-attachment: fixed;
+           
+        }
+        header{
+            width: auto;
+            background-color: #45C4B0 ;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 8px;
+           
+        }
+        nav{
+            background-color: #13678A;
+            padding: 3px;
+            margin: 1px;
+            box-shadow: 4px 4px 4px black;
+            border-radius: 8px;
+            
+           
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;}
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: red;}
+
+        main{
+            background-color: #45C4B0;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 9px;
+        }
+
+        article{
+            background-color: white;
+            padding: 5px;
+            text-indent: 30px;}
+
+        article > aside {
+            background-color: #45C4B0;
+            margin-top: 10px;
+            margin-bottom: 0px ;
+    }
+
+        footer{
+            background-color: rgb(0, 0, 0);
+            text-align: center ;
+            padding: 3px;
+            margin: 10px;
+            color: white;
+            border-radius: 10px;
+            
+        }
+        
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 30px;
+            text-decoration: underline;
+            width: 50%;
+            margin-left: 228px;
+            margin-right: 228px;
+        }
+        h2{text-align: center;
+            padding: 8px;
+            margin: 10px;
+            border-radius: 7px;
+            background-color: #3aa595;
+            box-shadow: 4px 4px 4px black;}
+
+        p > a{display: inline;
+              margin: auto;
+              text-align: center;
+              text-indent: 30px;}
+        img{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body> 
+    <header>
+        <h1>Meu Site de Caixas</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Esportes e seu mundo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt exercitationem odio nobis at molestiae, eveniet, nesciunt incidunt voluptas necessitatibus itaque veritatis perferendis dolorum sequi. Cum amet repudiandae accusantium neque numquam.</p>
+                <aside>Artigo escrito por Marreta Preta</aside>
+            </article>
+           
+        </section> 
+
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o descobrimento do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fuga dolorem! Nihil ipsum eligendi iste earum maiores totam dicta ut harum ea deleniti vitae, iusto unde debitis aperiam, obcaecati hic?</p>
+                <aside><p>Artigo escrito por José da Silva.</p></aside>
+            </article>
+
+        </section>
+
+
+    </main> <br>
+    <h2>Ir para a próxima página:</h2>
+    <p> <a href="pag02.html"><img src="60577.png" alt="" width="80" height="80" display: block></a></p> <br> <br> <br> <br> <br> <br>
+    
+
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo.</p>
+
+    </footer>
+
+
+</body>
+</html>
