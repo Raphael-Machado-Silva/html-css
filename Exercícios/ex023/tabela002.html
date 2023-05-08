@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        header{
+            text-align: center;
+            background-color: rgba(127, 255, 212, 0.76);
+            padding: 10px 10px 0px 10px;
+        }
+        table{
+            margin-top: 10px;
+            width: 500px;
+            border-collapse: collapse; /* tag para deixar as bordas internas coladas uma nas outras (essencial para usar tabelas em html) */
+        }
+        td, th{
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .numero{
+            text-align: right;
+        }
+        thead, tfoot{
+            background-color: rgba(128, 128, 128, 0.658);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Uso de tabelas grandes</h1> <hr>
+    </header> 
+    <!--Anatomia para tabelas grandes:
+    1.Table
+        2. T-head 
+            TR, TD, TH
+        3. T-body
+            TR, TD, TH
+        4. T-foot
+            TR, TD, TH
+        -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>% da pop. total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.024.937</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.732.660</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.615.526</td>
+                <td>8,0%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.659.023</td>
+                <td>7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.835.379</td>
+                <td>5,7%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.088.065</td>
+                <td>5,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.051.113</td>
+                <td>4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8.936.431</td>
+                <td>4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8.442.962</td>
+                <td>4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7.762.154</td>
+                <td>3,7%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">6.950.976</td>
+                <td>3,3%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6.800.605</td>
+                <td>3,3%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">4.108.508</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">4.030.961</td>
+                <td>1.9%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3.952.262</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3.784.239</td>
+                <td>1,8%</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="numero"><strong>00000</strong></td>
+                <td><strong>100%</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
