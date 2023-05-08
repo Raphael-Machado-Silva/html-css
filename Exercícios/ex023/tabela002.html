@@ -33,6 +33,7 @@
             margin: auto;
             width: 500px;
             border-collapse: collapse; /* tag para deixar as bordas internas coladas uma nas outras (essencial para usar tabelas em html) */
+            position: relative;
         }
         td, th{
             text-align: center;
@@ -49,7 +50,13 @@
             text-align: right;
         }
         thead, tfoot{
-            background-color: #808080a8;
+            background-color: #404b55;
+            color: white;
+        }
+        thead > tr > th{ /*para deixar cabeçalho fixo usar position sticky, top=0, background igual ao do thead e colocar nao table positon relative */
+            position: sticky;
+            top: -1px;
+            background-color: #404b55 ;
         }
         tbody > tr:nth-child(2n){  /*tag :NTH-CHILD(2N/odd/even...), para deixar zebrado uma tabela em html e css */
             background-color: #858585;
@@ -161,6 +168,56 @@
                         <td>Mato Grosso</td>
                         <td class="numero">3.784.239</td>
                         <td>1,8%</td>
+                    </tr>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="numero">46.024.937</td>
+                        <td>22,2%</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="numero">20.732.660</td>
+                        <td>10,0%</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="numero">16.615.526</td>
+                        <td>8,0%</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="numero">14.659.023</td>
+                        <td>7,1%</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="numero">11.835.379</td>
+                        <td>5,7%</td>
+                    </tr>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="numero">46.024.937</td>
+                        <td>22,2%</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="numero">20.732.660</td>
+                        <td>10,0%</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="numero">16.615.526</td>
+                        <td>8,0%</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="numero">14.659.023</td>
+                        <td>7,1%</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="numero">11.835.379</td>
+                        <td>5,7%</td>
                     </tr>
                 </tbody>
                 <tfoot>
