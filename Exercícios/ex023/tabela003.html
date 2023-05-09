@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: #0000ff42;
+        }
+        header{
+            background-color: cyan;
+            color: black;
+            font-size: 2em;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        main{
+          max-width: 1000px;
+          min-width: 500px;
+          background-color: antiquewhite;
+          margin: auto;
         }
         table{
             border-collapse: collapse;
             width: 300px;
+            background-color: white;
+            margin: auto;
+           
         }
         td{
             border: 1px solid black;
@@ -19,35 +41,36 @@
             text-align: center;
         }
     </style>
-    
+
 </head>
 <body>
-    <h1>Mesclagem de Células</h1>
-    <table>
-        <tr>
-            <td>A</td>
-            <td colspan="2">B</td> <!--Usar COLSPAN PARA FAZER UMA CELULA OCUPAR 2 COLUNAS OU MAIS-->
-            
-        </tr>
-
-        <tr>
-            <td rowspan="3">D</td> <!--Usar ROWSPAN para uma celular ocupar 3 ou mais linhas-->
-            <td>E</td>
-            <td>F</td>
-        </tr>
-
-        <tr>
-            
-            <td>H</td>
-            <td>I</td>
-        </tr>
-
-        <tr>
-           
-            <td>K</td>
-            <td>L</td>
-        </tr>
-    </table>
+    <header>
+        <h1>Mesclagem de Células</h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td> <!--Usar COLSPAN PARA FAZER UMA CELULA OCUPAR 2 COLUNAS OU MAIS-->
+        
+            </tr>
+            <tr>
+                <td rowspan="3">D</td> <!--Usar ROWSPAN para uma celular ocupar 3 ou mais linhas-->
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+        
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+        
+                <td>K</td>
+                <td>L</td>
+            </tr>
+        </table>
+    </main>
     
 </body>
 </html>
