@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframes</title>
+    <style>
+        iframe{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            box-shadow: 1px 2px 2px 1px ;
+        }
+    </style>
 </head>
 <body>
-    <h1>Testando o uso de um iframe</h1> <!--Iframe basicamente é uma nova aba dentro da sua página, ou seja, ele aparece outro site dentro do seu em um local delimitado-->
+    <h1>Testando o uso de um iframe</h1> <!--Iframe basicamente é uma nova aba dentro da sua página, ou seja, ele aparece outro site dentro do seu em um local delimitado, e caso o iframe não seja compartivel usar um link para o site, para facilitar o acesso do material para o consumidor (padrao tamanho: 300x150px, o ajuste do mesmo também pode ser feito normalmente dentro da tag ou dentro do style, tendo preferencia o style como configurações)-->
     <p>Acessando o site do 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar.</p>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="400" width="400"><a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a></iframe> 
+       para aprender a programar.</p>
+
+    <p> O repositório do Guanabara
+            <iframe src="https://gustavoguanabara.github.io" frameborder="0"><a href="https://gustavoguanabara.github.io" target="_blank">Acessar</a></iframe> 
+        também é vem legal</p>
     
 </body>
 </html>
