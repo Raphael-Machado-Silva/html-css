@@ -12,14 +12,15 @@ body{
     </style>
 </head>
 <body>
-    <a href="#" onclick="clicou()">Clique em Mim</a>
-    <div id="saida"></div>
+<a href="#" onclick="clicou(event)">Clique em Mim</a>
+<div id="saida"></div> 
 
-    <script>
-        function clicou(){
-            s = window.document.getElementByid("saida")
-            s.innerHTML += "<h1>Você clicou</h1>"
-        }
-    </script>
+<script>
+  function clicou(event) {
+    event.preventDefault();
+    var s = window.document.getElementById("saida");
+    s.innerHTML += "<h1>Você clicou</h1>";
+  }
+</script>
 </body>
 </html>
