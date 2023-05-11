@@ -35,7 +35,7 @@ a{
 }
 
 a#sim{position:absolute;
-    top: 20%; left: 15%;
+    top: 20%; left: 0%;
     background-color: brown;
     color: white;
     text-decoration: none;
