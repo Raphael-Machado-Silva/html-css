@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
-<body> <!--Dentro do FORM tem um P ou DIV que possui dentro do mesmo um LABEL de tipo get com um IMPUT-->
+<body> <!--Dentro do FORM tem um P ou DIV que possui dentro do mesmo um LABEL de tipo get com um IMPUT, use a tag required para tornar obrigatório colocar um dado-->
     <h1>Teste de Formulário</h1> <hr>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="iusu">Usuário</label> 
-            <input type="text" name="usu" id="iusu">
+            <input type="text" name="usu" id="iusu" required size="25" placeholder="Nome do Usuário">
         </p>
+
         <p>
             <label for="isenha">Senha</label>
-            <input type="password" name="senha" id="isenha">
+            <input type="password" name="senha" id="isenha" required size="25" placeholder="Senha">
         </p>
+
         <p><input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-        
-       
-
 
     </form>
     
