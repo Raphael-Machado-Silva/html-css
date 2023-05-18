@@ -1,1 +1,7 @@
 @charset "UTF-8";
+
+/*Aparelho em modo paisagem*/
+
+body{
+    background-color: blueviolet;
+}
