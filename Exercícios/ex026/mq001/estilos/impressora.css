@@ -17,6 +17,10 @@ menu{
     display: none;
 }
 
+article{
+    width: 100%;
+}
+
 article::after{
     content: 'Esse artigo foi impresso dia 18/05/2023' ;
 }
