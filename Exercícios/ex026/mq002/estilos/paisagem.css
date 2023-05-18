@@ -3,5 +3,8 @@
 /*Aparelho em modo paisagem*/
 
 body{
-    background-color: blueviolet;
+   background: url(../imagens/cev-landscape.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: left bottom;
 }
