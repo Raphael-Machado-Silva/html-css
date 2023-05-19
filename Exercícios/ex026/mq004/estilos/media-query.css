@@ -62,7 +62,11 @@ Tv: 1200px ou maior
     main{
         border: 2px solid black;
     }
-    
+
+    main::after{
+        content: 'Essa impressão foi feita através do site do curso em vídeo';
+    }
+
     img#phone{display: none;}
     img#tablet{display: none;}
     img#print{display: block;}
