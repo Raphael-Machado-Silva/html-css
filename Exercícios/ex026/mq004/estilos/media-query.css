@@ -48,7 +48,24 @@ Tv: 1200px ou maior
     img#tv{display: block;}
 }
 
-
 @media print {
+   *{
+    font-family: 'Courier New', Courier, monospace;
+   }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /*D DESNECESSÁRIO PQ NÃO IMPRIMI BACKGROUNDS */
+        text-shadow: none;
+        color: black;
+    }
+
+    main{
+        border: 2px solid black;
+    }
     
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
