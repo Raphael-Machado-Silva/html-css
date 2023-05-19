@@ -17,10 +17,11 @@ header{
 header > h1{
     padding: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 span#burguer{
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(46, 46, 46);
     display: block;
     color: white;
     text-align: center;
