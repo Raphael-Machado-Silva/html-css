@@ -18,5 +18,12 @@ Tv: 1200px ou maior
     display: block;
    }
    
+   menu > ul > li{
+    display: inline-block;
+   }
+
+   main{
+    width: 768px;
+   }
     
 }
